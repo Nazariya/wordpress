@@ -13,6 +13,8 @@ sudo -i
 cd /var/app/current
 ls -a -l
 zip -r wordpress.zip .
+# Download http://web.site/wordpress.zip
+rm -f wordpress.zip
 ```
 
 ### Export DB
