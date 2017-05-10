@@ -5,6 +5,10 @@ http://docs.aws.amazon.com/getting-started/latest/wordpress/deploy-wordpress-on-
 ```shell
 chmod 400 drag-n-drop.pem
 ssh -i drag-n-drop.pem ec2-user@54.202.254.14
+```
+
+### Root login
+```shell
 sudo -i
 ```
 
@@ -12,6 +16,7 @@ sudo -i
 ```shell
 cd /var/app/current
 ls -a -l
+rm -rf wp-content/uploads/*
 zip -r wordpress.zip .
 # download http://web.site/wordpress.zip
 rm -f wordpress.zip
