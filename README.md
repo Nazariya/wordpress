@@ -1,10 +1,10 @@
-# WordPress Website on AWS EBS
+# WordPress Website on AWS Elastic Beanstalk
 http://docs.aws.amazon.com/getting-started/latest/wordpress/deploy-wordpress-on-aws.html
 
 ### SSH
 ```shell
 chmod 400 drag-n-drop.pem
-ssh -i drag-n-drop.pem ec2-user@54.202.254.14
+ssh -i drag-n-drop.pem ec2-user@elastic-beanstalk.current.instance.ip
 ```
 
 ### Root login
